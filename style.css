@@ -1,0 +1,17 @@
+body {
+  font-size: 13px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Manrope', sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=style.css.map */

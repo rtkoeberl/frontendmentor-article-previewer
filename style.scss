@@ -1,0 +1,27 @@
+//widths
+$mobileWidth: "375px";
+$desktopWidth: "1440px";
+
+//colors
+$blueDarkest: hsl(217, 19%, 35%);
+$blueDark: hsl(214, 17%, 51%);
+$blueMuted: hsl(212, 23%, 69%);
+$blueLight: hsl(210, 46%, 95%);
+$blueLink: hsl(228, 45%, 44%);
+
+body {
+  font-size: 13px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Manrope', sans-serif; //500 & 700 options
+}
+
+.attribution {
+  font-size: 11px; text-align: center;
+
+  a { 
+    color: $blueLink; 
+  }
+
+}
