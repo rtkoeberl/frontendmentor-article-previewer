@@ -9,16 +9,109 @@ $blueMuted: hsl(212, 23%, 69%);
 $blueLight: hsl(210, 46%, 95%);
 $blueLink: hsl(228, 45%, 44%);
 
-body {
-  font-size: 13px;
+//body
+
+* {
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3, h4, h5 {
+body {
+  font-size: 13px;
+  color: $blueDark;
+  background-color: $blueLight;
   font-family: 'Manrope', sans-serif; //500 & 700 options
 }
 
+//content
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 740px;
+  height: 270px;
+
+  //central positioning of box
+  margin: auto;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.article-image {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  overflow: hidden;
+
+  flex: 4;
+
+  img {
+    max-height: 100%;
+  }
+}
+
+.article-content {
+  position: relative;
+  padding: 30px 45px;
+
+  flex: 5;
+
+  h2 {
+    color: $blueDarkest;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  p {
+    margin: 12px 0;
+  }
+  
+  .details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 66px;
+
+    #icon {
+      border-radius: 50%;
+      width: 40px;
+      float: left;
+      margin-right: 10px;
+    }
+
+    #author {
+      color: $blueDarkest;
+    }
+
+    #date {
+      color: $blueMuted;
+    }
+
+    #share {
+      float: right;
+      background-color: $blueLight;
+      padding: 10px;
+      border-radius: 50%;
+    }
+  }
+}
+
+//footer
+
 .attribution {
-  font-size: 11px; text-align: center;
+  font-size: 11px;
+  bottom: 0px;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  padding-bottom: 5px;
+  background-color: $blueLight;
+  z-index: 1;
 
   a { 
     color: $blueLink; 
